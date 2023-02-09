@@ -145,12 +145,15 @@
     .box-left-home {
         width: 100%;
         height: 50%;
-        align-items: flex-start;
     }
 
     .box-right-home {
         width: 100%;
         height: 50%;
+    }
+
+    .box-right-home figure img {
+        margin-top: 13rem;
     }
 
     .box-apresentação {
@@ -172,6 +175,16 @@
 }
 
 @media screen and (max-height:760px) {
+
+    .box-left-home {
+        align-items: flex-end;
+        margin-bottom: 15%;
+    }
+
+    .box-right-home figure img {
+        margin-top: 11rem;
+    }
+
     .Scrool-Down {
         display: none;
     }
