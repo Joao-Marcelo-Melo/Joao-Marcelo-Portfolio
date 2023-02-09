@@ -1,0 +1,93 @@
+.habilidades {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.habilidades h2 {
+    color: var(--primary-color);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-transform: uppercase;
+}
+
+.habilidades p {
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+
+.habilidades-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.banner-habilidade {
+    width: 35%;
+}
+
+.banner-habilidade img {
+    width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.skills-line {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+}
+
+.card-skill {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-skill figcaption {
+    color: var(--font-color);
+    font-size: clamp(0.6rem, 1vw, 1.2rem);
+    margin-bottom: 8px;
+}
+
+.card-skill img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card-skill img:hover {
+    transform: translateY(-5px);
+}
+
+.POO {
+    background-color: #fff;
+}
+
+.skill-breve {
+    opacity: 0.2;
+}
+
+
+@media screen and (max-width:820px) {
+    .habilidades-container {
+        flex-direction: column-reverse;
+        margin-top: 20%;
+    }
+
+    .banner-habilidade {
+        width: 75%;
+    }
+
+    .skills-line {
+        width: 90vw;
+    }
+}

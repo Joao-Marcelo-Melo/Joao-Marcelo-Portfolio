@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="./assents/CSS/style.css">
+    <link rel="stylesheet" href="./assents/CSS/header.css">
+    <link rel="stylesheet" href="./assents/CSS/home.css">
+    <link rel="stylesheet" href="./assents/CSS/Sobre.css">
+    <link rel="stylesheet" href="./assents/CSS/habilidades.css">
+    <link rel="stylesheet" href="./assents/CSS/projetos.css">
+    <link rel="stylesheet" href="./assents/CSS/footer.css">
+    <link rel="stylesheet" href="./assents/CSS/ScroolReveal.css">
+    <!-- Links CSS -->
+
+    <!-- Biblioteca ScroolReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Biblioteca ScroolReveal -->
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assents/img/banner-habilidade.png" type="image/x-icon">
+    <!-- FAVICON -->
+
+    <title>João Marcelo</title>
+
+</head>
+
+<body>
+    <!-- Começo HEADER -->
+    <header>
+
+        <nav>
+            <div class="logo">
+                <h1>&lsaquo;JM/&rsaquo;</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <button class="mobile-btn btn" onclick="MenuToogle()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a onclick="FecharMenu()" class="link" href="#Home">Home</a></li>
+                <li><a onclick="FecharMenu()" class="link" href="#Sobre">Sobre</a></li>
+                <li><a onclick="FecharMenu()" class="link" href="#Habilidades">Habilidades</a></li>
+                <li><a onclick="FecharMenu()" class="link" href="#Projetos">Projetos</a></li>
+                <li><a onclick="FecharMenu()" class="link" href="#Contato">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- Fim HEADER -->
+    <main>
+        <!-- Começo HOME -->
+        <section class="home" id="Home">
+            <section class="box-left-home RevealUp">
+                <div class="box-apresentação">
+                    <h3>Olá! Eu sou,</h3>
+                    <h1 class="meu-nome">João Marcelo</h1>
+                    <h2>Desenvolvedor Jr</h3>
+
+                        <a href="">
+                            <button class="btn-cv">Download CV</button>
+                        </a>
+
+                        <div class="icons-home">
+                            <a href="https://github.com/Joao-Marcelo-Melo?tab=repositories" class="icon-home"
+                                target="_blank">
+                                <img src="./assents/img/github-icon.png" alt="">
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/joão-marcelo-0995a0235/" class="icon-home"
+                                target="_blank">
+                                <img src="./assents/img/linkedin-icon.png" alt="">
+                            </a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="box-right-home RevealDown">
+                <figure>
+                    <img src="./assents/img/banner-home.png" alt="">
+                </figure>
+            </section>
+
+            <span class="Scrool-Down"><a href="#Sobre">↓</a></span>
+        </section>
+        <!-- Fim HOME -->
+
+        <!-- Começo SOBRE -->
+        <section class="sobre" id="Sobre">
+            <h2>Sobre mim</h2>
+            <p>Pequeno Resumo</p>
+
+            <section class="sobre-container">
+                <img class="RevealLeft" src="./assents/img/WhatsApp Image 2023-02-05 at 19.27.55.jpeg" alt="a">
+                <div class="box-text-sobre RevealRight">
+                    <p>Me chamo João Marcelo de Melo Bomfim tenho 18 anos e atualmente cursando análise e
+                        desenvolvimento de sistemas. Estou em busca de uma primeira experiência profissional para pôr em
+                        prática tudo o que foi aprendido ao longo da faculdade juntamente com meus estudos pessoais.
+                    </p>
+                    <p> Possuo uma aprendizagem rápida e por isso não devo encontrar problemas de adaptação, além de
+                        contar com muita vontade de aprender, evoluir e agregar em uma equipe.</p>
+                </div>
+            </section>
+        </section>
+        <!-- Fim SOBRE -->
+
+        <!-- Começo HABILIDADES -->
+        <section class="habilidades" id="Habilidades">
+            <h2>Habilidades</h2>
+            <p>O que eu sei e o que estou aprendendo</p>
+
+            <section class="habilidades-container">
+                <section class="skills RevealDown">
+                    <div class="skills-line">
+                        <figure class="card-skill">
+                            <figcaption>HTML5</figcaption>
+                            <img src="./assents/img/html-5.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>CSS3</figcaption>
+                            <img src="./assents/img/css-3.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>JAVASCRIPT</figcaption>
+                            <img src="./assents/img/script-java.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>REACT</figcaption>
+                            <img class="skill-breve" src="./assents/img/react.png" alt="">
+                        </figure>
+                    </div>
+
+                    <div class="skills-line">
+                        <figure class="card-skill">
+                            <figcaption>SASS</figcaption>
+                            <img class="skill-breve" src="./assents/img/sass.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>BOOTSTRAP</figcaption>
+                            <img class="skill-breve" src="./assents/img/bootstrap.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>POO</figcaption>
+                            <img class="POO" src="./assents/img/POO.png" alt="">
+                        </figure>
+
+                        <figure class="card-skill">
+                            <figcaption>PYTHON</figcaption>
+                            <img src="./assents/img/python.png" alt="">
+                        </figure>
+                    </div>
+                </section>
+
+                <figure class="banner-habilidade RevealDown">
+                    <img src="./assents/img/banner-habilidade.png" alt="">
+                </figure>
+            </section>
+        </section>
+        <!-- Fim HABILIDADES -->
+
+        <!-- Começo PROJETOS -->
+        <section class="projetos" id="Projetos">
+            <h2>Projetos</h2>
+            <p>Projetos que já fiz</p>
+
+            <section class="projetos-container">
+                <div class="projetos-line">
+                    <figure class="card-projeto RevealLeft">
+                        <img class="img" src="assents/img/teste-pikachu.PNG" alt="">
+                        <figcaption>
+                            <h3>Pikachu-Game</h3>
+                            <p>Projeto realizado com o objetivo de praticar os conceitos do JS</p>
+                            <p>Tecnologias utulizadas: HTML, CSS, JS</p>
+                            <a href="https://joao-marcelo-melo.github.io/StarWars-VnW/">
+                                <button>Visualizar</button>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="card-projeto RevealRight">
+                        <img class="img" src="./assents/img/teste-starwars.PNG" alt="">
+                        <figcaption>
+                            <h3>StarWars-Battlefront</h3>
+                            <p>Projeto realizado com o auxilio do <a class="VainaWeb" href="https://vainaweb.com.br"
+                                    target="_blank">VainaWeb</a> e desenvolvido com o objetivo de práticar conceitos
+                                básicos do HTML E CSS</p>
+                            <p>Tecnologias utulizadas: HTML, CSS</p>
+                            <button>Visualizar</button>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="projetos-line">
+                    <figure class="card-projeto-breve RevealLeft">
+                        <img src="./assents/img/wp2414739-404-wallpapers.jpg" alt="">
+                        <figcaption>
+                            <p>EM BREVE</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card-projeto-breve RevealRight">
+                        <img src="./assents/img/wp2414739-404-wallpapers.jpg" alt="">
+                        <figcaption>
+                            <p>EM BREVE</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!-- Fim PROJETOS -->
+    </main>
+
+    <!-- Começo FOOTER -->
+    <!-- <footer>
+        <section class="upper-footer">
+            <div class="icons-footer">
+                <img src="./assents/img/github-icon-Footer.png" alt="">
+                <img src="./assents/img/instagram-icon-Footer.png" alt="">
+                <img src="./assents/img/linkedin-icon-Footer.png" alt="">
+                <img src="./assents/img/gmail-icon-Footer.png" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="lower-footer">
+            <h2>João Marcelo</h2>
+            <p>Desenvolvedor Jr</p>
+            <p>Copyright © 2022 | Criado por João Marcelo</p>
+        </section>
+    </footer> -->
+    <!-- Fim FOOTER -->
+
+    <!-- Links JAVA-SCRIPT -->
+    <script src="./assents/JS/Menu.js"></script>
+    <script src="./assents/JS/Typing.js"></script>
+    <script defer src="./assents/JS/ScroolReveal.js"></script>
+    <!-- Links JAVA-SCRIPT -->
+
+</body>
+
+</html>

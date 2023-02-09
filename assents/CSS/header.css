@@ -1,0 +1,157 @@
+header {
+    background-color: #000;
+    border-bottom: solid var(--primary-color);
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+.nav-list {
+    width: 40vw;
+    margin-right: 20%;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list ul li {
+    font-size: 1.2rem;
+    margin-left: 5%;
+}
+
+.nav-list ul li a {
+    color: var(--font-color);
+    display: block;
+    position: relative;
+}
+
+.nav-list ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    content: "";
+    transform: scale(0);
+    transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.nav-list ul li a:hover::after {
+    transform: scale(1);
+}
+
+.mobile-btn  {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line1, .line2 , .line3 {
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-aberto {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+}
+
+.menu-fechar .line2 {
+    display: none;
+}
+
+.menu-fechar .line1{
+     transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    position: absolute;
+    right: 8%
+}
+
+.menu-fechar .line3{
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    position: absolute;
+    right: 8%;
+}
+
+@media screen and (max-width:750px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 1.5rem 0rem;
+    }
+
+    .logo {
+        margin-left: 8%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin-right: 8%;
+    }
+
+    .mobile-menu {
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        height: 87vh;
+    }
+
+    .mobile-menu ul li a {
+        color: var(--font-color);
+        display: block;
+        font-size: 1.3rem;
+        margin-top: 5rem;
+        position: relative;
+    }
+    
+    .mobile-menu ul li a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--primary-color);
+        content: "";
+        transform: scale(0);
+        transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+    }
+    
+    .mobile-menu ul li a:hover::after {
+        transform: scale(1);
+    }
+}
