@@ -1,8 +1,8 @@
-let menu = document.querySelector('.mobile-menu')
-let btn = document.querySelector('.btn')
+let menu = document.querySelector('.mobile-menu');
+let btn = document.querySelector('.btn');
+let link = document.getElementById('link');
 
-function MenuToogle() {
-
+const MenuToogle = () => {
 
      if (menu.classList.contains('menu-aberto')) {
           menu.classList.remove('menu-aberto')
@@ -13,7 +13,4 @@ function MenuToogle() {
      }
 }
 
-function FecharMenu() {
-     menu.classList.remove('menu-aberto')
-     btn.classList.remove('menu-fechar')
-}
+btn.addEventListener('click', () => MenuToogle());
